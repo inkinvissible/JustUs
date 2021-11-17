@@ -999,6 +999,10 @@ section {
   background: #fff;
   padding: 60px 0;
 }
+.equipoSeccion{
+  display: flex;
+  justify-content: center;
+}
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
