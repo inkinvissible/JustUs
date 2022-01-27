@@ -1644,14 +1644,21 @@ section {
   transition: box-shadow 0.7s ease-in-out;
   color: #3a3a3a;
   border-radius: 4px;
+  margin-bottom: 15px;
   border: 1px solid #3a3a3a;
 
 }
 
-.carta:hover {
+.carta:hover, .carta:focus {
   box-shadow: 5px 4px 18px -1px rgba(153, 153, 153, 0.75);
   -webkit-box-shadow: 5px 4px 18px -1px rgba(153, 153, 153, 0.75);
   -moz-box-shadow: 5px 4px 18px -1px rgba(153, 153, 153, 0.75);
+}
+@media (max-width: 772px){
+  .carta{
+    font-size: 15px;
+    height: auto;
+  }
 }
 .carta div{
   display: flex;
@@ -1666,6 +1673,7 @@ section {
   transition: all 0.5s ease-in-out;
   text-transform: uppercase;
   border-radius: 4px;
+  
 }
 .btnCarta:hover{
   color: black;
@@ -1679,11 +1687,12 @@ section {
   padding: 0;
 }
 
-
+/*Menu*/
 
 .mainPagina{
+  padding-top: 75px;
   margin-top: 35px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -1700,7 +1709,17 @@ section {
   justify-content: flex-start;
   width: 60%;
 }
-
+@media (max-width:650px){
+  .mainPagina article{
+    margin: 20px 10px 20px 10px;
+  }
+}
+@media (max-width: 770px){
+  .btnCarta{
+    margin-bottom: 10px;
+  }
+  
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
